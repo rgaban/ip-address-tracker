@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>IP Address Tracker</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet Setup -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">
+          <h1 id="title">IP Address Tracker</h1>
+        </div>
+
+        <div class="search">
+          <form action="" id="form" class="form">
+            <input id="search" type="text" name="search" placeholder="Search for any IP address or domain"></input>
+            <button type="submit" class="btn-search">
+              <img id="arrow" src="../images/icon-arrow.svg" alt="Search" />
+            </button>
+          </form>
+        </div>
+      </header>
+
+      <div class="results">
+        <ul>
+          <li>
+            <h2>IP Address</h2>
+            <p id="ip">191.187.140.169</p>
+          </li>
+          <li>
+            <h2>Location</h2>
+            <p id="location">Rosemead (Garvey), California, 91770</p>
+          </li>
+          <li>
+            <h2>Timezone</h2>
+            <p id="timezone">-07:00 UTC</p>
+          </li>
+          <li>
+            <h2>ISP</h2>
+            <p id="isp">Southern California Edison</p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="map"></div>
+        <div id="mapid"></div>
+      </div>
+
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
